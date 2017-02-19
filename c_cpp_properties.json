@@ -17,7 +17,8 @@
             "clang_format" : {
                 "style" : "file",
                 "fallback-style" : "Mozilla",
-                "sort-includes" : "false"
+                "sort-includes" : "false",
+                "clang_format_path" : "/usr/local/bin/clang-format"
             }
         }
     ]

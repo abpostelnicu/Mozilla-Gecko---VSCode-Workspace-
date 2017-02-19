@@ -3,8 +3,6 @@
     "files.trimTrailingWhitespace": true,
     "rewrap.wrappingColumn": 80,
     "editor.rulers": [ 80 ],
-     "C_Cpp.clang_format_path" : "/usr/local/bin/clang-format",
-    //"clang-format.style": "Mozilla",
     "editor.formatOnType": false,
     "files.associations": {},
     "git.enableLongCommitWarning": false,
