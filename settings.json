@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.trimTrailingWhitespace": true,
+    "rewrap.wrappingColumn": 80,
+    "editor.rulers": [ 80 ],
+     "C_Cpp.clang_format_path" : "/usr/local/bin/clang-format",
+    //"clang-format.style": "Mozilla",
+    "editor.formatOnType": false,
+    "files.associations": {},
+    "git.enableLongCommitWarning": false,
+    "git.autofetch": false,
+    "editor.renderWhitespace": "boundary",
+    "diffEditor.ignoreTrimWhitespace": false
+}

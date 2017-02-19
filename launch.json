@@ -1,0 +1,63 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Firefox/LLDB",
+            "type": "lldb",
+            "request": "launch",
+            "program": "/Users/abpostelnicu/Projects/mozilla/obj-ff-osx/dist/NightlyDebug.app/Contents/MacOS/firefox",
+            "args": ["-no-remote", "-foreground", "-p", "Development"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/../obj-ff-osx/dist/bin",
+            "initCommands" : [ ],
+            "stdio" : "*",
+            "terminal" : "external",
+            "env": {
+                "DYLD_LIBRARY_PATH" : ".:./plugins",
+                "LIBRARY_PATH" : ".:./components",
+                "MOZ_XRE_DIR" : "${workspaceRoot}/../obj-ff-osx/dist/bin",
+                "MOZ_LOG" : "MediaDemuxer:5,MediaFormatReader:5,PlatformDecoderModule:5"
+            }
+        },
+        {
+            "name": "Firefox/Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/Users/abpostelnicu/Projects/mozilla/obj-ff-osx/dist/NightlyDebug.app/Contents/MacOS/firefox",
+            //"args": ["-no-remote", "-foreground", "-p", "MozillaDebug"],
+            "args": ["-p", "MozillaDebug"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/../obj-ff-osx/dist/bin",
+            /*"environment": [
+              { "name": "MOZ_LOG", "value": "MediaSource:5,MediaSourceSamples:5" }
+            ],*/
+            //"externalConsole": true,
+            "osx": {
+                "MIMode": "lldb"
+            },
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "windows": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
+            }
+        },
+        {
+            "name": "Firefox Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "/Users/abpostelnicu/Projects/mozilla/obj-ff-osx/dist/NightlyDebug.app/Contents/MacOS/firefox",
+            "processId": "${command.pickProcess}",
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "osx": {
+                "MIMode": "lldb"
+            },
+            "windows": {
+                "MIMode": "gdb"
+            }
+        }
+    ]
+}

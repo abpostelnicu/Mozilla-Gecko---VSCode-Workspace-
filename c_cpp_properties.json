@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Users/abpostelnicu/Projects/mozilla/obj-ff-osx/dist/include/",
+                "/usr/include/",
+                "/usr/local/include/",
+                "${workspaceRoot}/config/",
+                "${workspaceRoot}/ipc/glue",
+                "${workspaceRoot}/ipc/chromium/src/"
+            ],
+            "browse" : {
+                "limitSymbolsToIncludedHeaders" : true,
+                "databaseFilename" : ""
+            },
+            "clang_format" : {
+                "style" : "file",
+                "fallback-style" : "Mozilla",
+                "sort-includes" : "false"
+            }
+        }
+    ]
+}
