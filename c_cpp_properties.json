@@ -10,15 +10,23 @@
                 "${workspaceRoot}/ipc/glue",
                 "${workspaceRoot}/ipc/chromium/src/"
             ],
-            "browse" : {
-                "limitSymbolsToIncludedHeaders" : true,
-                "databaseFilename" : ""
+            "clang_format": {
+                "style": "file",
+                "fallback-style": "Mozilla",
+                "sort-includes": "false",
+                "clang_format_path": "/usr/local/bin/clang-format"
             },
-            "clang_format" : {
-                "style" : "file",
-                "fallback-style" : "Mozilla",
-                "sort-includes" : "false",
-                "clang_format_path" : "/usr/local/bin/clang-format"
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "/Users/abpostelnicu/Projects/mozilla/obj-ff-osx/dist/include/",
+                    "/usr/include/",
+                    "/usr/local/include/",
+                    "${workspaceRoot}/config/",
+                    "${workspaceRoot}/ipc/glue",
+                    "${workspaceRoot}/ipc/chromium/src/"
+                ]
             }
         }
     ]
