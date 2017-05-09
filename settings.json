@@ -1,7 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "files.trimTrailingWhitespace": true,
-    "rewrap.wrappingColumn": 80,
     "editor.rulers": [ 80 ],
     "editor.formatOnType": false,
     "files.associations": {
@@ -9,24 +8,10 @@
         "hashtable": "cpp",
         "chrono": "cpp",
         "__locale": "cpp",
-        "thread": "cpp",
-        "exception": "cpp",
-        "new": "cpp",
-        "array": "cpp",
-        "cinttypes": "cpp",
-        "cstdint": "cpp",
-        "random": "cpp",
-        "*.tcc": "cpp",
-        "tuple": "cpp",
-        "type_traits": "cpp",
-        "unordered_map": "cpp",
-        "unordered_set": "cpp",
-        "typeinfo": "cpp",
-        "__config": "cpp",
-        "initializer_list": "cpp"
+        "thread": "cpp"
     },
-    "git.enableLongCommitWarning": false,
     "git.autofetch": false,
     "editor.renderWhitespace": "boundary",
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.ignoreLimitWarning": true
 }
