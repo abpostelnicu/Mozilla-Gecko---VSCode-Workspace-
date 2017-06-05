@@ -8,7 +8,8 @@
         "hashtable": "cpp",
         "chrono": "cpp",
         "__locale": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "*.inc": "cpp"
     },
     "git.autofetch": false,
     "editor.renderWhitespace": "boundary",

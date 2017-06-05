@@ -2,6 +2,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Mach",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "${config.python.pythonPath}",
+            "program": "/Users/abpostelnicu/Projects/mozilla/mozilla-central/mach",
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "args": [
+                "static-analysis",
+                "check",
+                "dom/file/"
+            ],
+            "envFile": "${workspaceRoot}/.env",
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]
+        },
+        {
             "name": "Firefox/LLDB",
             "type": "lldb",
             "request": "launch",
